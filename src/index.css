@@ -1,13 +1,107 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 1rem;
+  font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #222;
+  color: #fff;
+  width: 100vw;
+  height: 100vh;
+}
+
+input,
+button {
+  outline: none;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.forca {
+  height: 80vh;
+}
+
+.flex {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  height: 80vh;
+}
+
+.col-1 {
+  position: relative;
+  justify-self: flex-start;
+  padding-left: 4rem;
+}
+
+.col {
+  justify-self: center;
+}
+
+.palavra {
+  font-size: 2rem;
+  font-weight: medium;
+  margin-bottom: 3rem;
+  letter-spacing: 0.5rem;
+
+  display: block;
+}
+
+input {
+  width: 200px;
+  padding: 0.2rem 1.5rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #ffffff;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+button {
+  cursor: pointer;
+  width: 100px;
+  padding: 0.55rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #ffffffdd;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.tentativas {
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  text-align: left;
+}
+
+.tentativas div {
+  display: flex;
+  letter-spacing: 0.6rem;
+}
+
+.tentativas span {
+  margin-top: 1rem;
+  font-weight: normal;
+}
+
+.loser {
+  color: #ffa9a9;
+}
+
+.wins {
+  color: #a5ffa5;
+}
+
+.feedback h3 {
+  margin-bottom: 1rem;
 }
